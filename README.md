@@ -1,1 +1,1 @@
-# DjangoLearning
+# Django Projects
