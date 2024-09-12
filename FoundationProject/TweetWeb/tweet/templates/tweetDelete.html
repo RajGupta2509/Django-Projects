@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tweet App
+{% endblock %}
+
+
+{% block content %}
+<div class='text-center mt-4 mb-4'>
+    <h1>Welcome to Our Tweet Application.</h1>
+    <br>
+    <h4 class=''>Are you sure that you want to delete the tweet?</h4> 
+    <form method="post">
+        {% csrf_token %}
+        <button class="btn btn-danger">delete</button>
+        <button class="btn btn-success">cancel</button>
+    </form>
+
+    <br>
+    <a href="{% url "displayTweet" %}">Back to Tweets</a>
+</div>
+{% endblock %}
+
